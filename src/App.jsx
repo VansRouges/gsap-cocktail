@@ -7,6 +7,10 @@ import Draggable from "gsap/Draggable";
 
 // or all tools are exported from the "all" file (excluding members-only plugins):
 import { MotionPathPlugin, SplitText } from "gsap/all";
+import Navbar from "./components/Navbar";
+import Cocktails from "./components/Cocktails";
+import Hero from './components/Hero';
+import About from "./components/About";
 
 // don't forget to register plugins
 gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); 
@@ -15,9 +19,15 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (
-    <div className="flex-center h-[100vh]">
-      <h1 className="text-3xl text-indigo-300">Hello World</h1>
-    </div>
+    <main>
+      <Navbar />
+      <Hero />
+      <Cocktails />
+      <About />
+      {/* <Art /> */}
+      {/* <Menu /> */}
+      {/* <Contact /> */}
+    </main>
   )
 }
 
