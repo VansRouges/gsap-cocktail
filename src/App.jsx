@@ -1,5 +1,4 @@
 import gsap from "gsap";
-
 // get other plugins:
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Flip from "gsap/Flip";
@@ -11,6 +10,9 @@ import Navbar from "./components/Navbar";
 import Cocktails from "./components/Cocktails";
 import Hero from './components/Hero';
 import About from "./components/About";
+import Art from "./components/Art";
+import Menu from "./components/Menu";
+import Contact from './components/Contact';
 
 // don't forget to register plugins
 gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); 
@@ -24,9 +26,9 @@ const App = () => {
       <Hero />
       <Cocktails />
       <About />
-      {/* <Art /> */}
-      {/* <Menu /> */}
-      {/* <Contact /> */}
+      <Art />
+      <Menu />
+      <Contact />
     </main>
   )
 }
